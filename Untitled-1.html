@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, rgb(56, 103, 206), rgb(0, 0, 0));
+            font-family: 'times new roman', cursive, sans-serif;
+            text-align: center;
+            margin: 10;
+            padding: 10;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 30px;
+            margin-top: 50px;
+            animation: bounce 1s infinite alternate;
+        }
+        p {
+            font-size: 18px;
+            color: #9c9c9c;
+            margin-top: 20px;
+        }
+        img {
+            width: 300px;
+            height: 400px;
+            border-radius: 50%;
+            border: 5px solid #ff80ab;
+            box-shadow: 0 30px 20px rgba(0,0,0,0.2);
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .button {
+            background-color: #ff80ab;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+            animation: fadein 2s infinite;
+        }
+        @keyframes fadein {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .button:hover {
+            background-color: #f50057;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Halo.. Happy Birthday, Biwa!</h1>
+    <img src="foto2.jpeg" alt="Foto Pacar">
+    <p>banyak pesan yang mau aku sampaikan buat ulang tahunmu sayang ❤️</p>
+    <p>sebelumnya terimakasih ya syg uda hidup sejauh ini, terimakasih sudah bertahan ngelewatin semua rintangan hidup
+        yg mungkin ga mudah, bby hebat bisa sampai dititik ini, aku bangga, aku juga mau terimakasih uda jadi laki laki
+        paling baik, paling ganteng, paling sabar buat aku hihii, aku tau bby juga punya rasa cape dan jenuh tapi terimakasih
+        masih tetep mau kasih aku rasa cinta dan sayang selama ini ya sayang, aku selalu berdoa dan selalu berharap 
+        bby sehagia selalu apapun yg terjadi, sehat dan panjang umur biar kita bisa ngelakuin banyak Hal yg belum pernah
+        kita coba bareng lagi, aku juga pasti selalu ngasi doa ku buat bby supaya bby sukses dan bisa capai apapun yg bby pengen,
+        karna aku tau bby org hebat, semangat ya sayang, aku gabisa janji aku akan terus ada buat bby tapi aku bisa jamin kalo aku bakal
+        tetap ngasi rasa sayang dan peduliku ke bby walaupun kita ga berjodoh, sayang aku bakal tetep jadi org yg bahagia karena kehadiranmu
+        di dunia ini, jadi terimakasih uda lahir ke dunia yaa sayangg, ayo saling kasih ucapan buat ulang tahun selanjutnya dan selamanya ya sayang,
+        aku mungkin gabisa ungkapin seberapa besar sayangku sama bby, tapi semoga bby bisa rasain kalo aku cinta samamu bahkan sama jiwamu, 
+        kalaupun aku jadi tempat terakhir bby minta pertolongan setelah oranglain, aku akan tetap ada disana buat bby yaa.. iloveyou more than i showed sayang..
+
+    </p>
+    
+    <button class="button">Klik untuk Kejutan 🎉</button>
+
+    <script>
+        const button = document.querySelector('.button');
+
+        button.addEventListener('click', () => {
+          // Add your surprise code here!
+          // Replace this with your own code
+          alert('Selamat ulang tahun, Sayang! 🎉');
+        });
+    </script>
+
+</body>
+</html>
