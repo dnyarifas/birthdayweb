@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, rgb(56, 103, 206), rgb(0, 0, 0));
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 48px;
+            margin-top: 50px;
+            animation: bounce 1s infinite alternate;
+        }
+        p {
+            font-size: 24px;
+            color: #9c9c9c;
+            margin-top: 20px;
+        }
+        img {
+            width: 500px;
+            height: 600px;
+            border-radius: 50%;
+            border: 5px solid #ff80ab;
+            box-shadow: 0 30px 20px rgba(0,0,0,0.2);
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .button {
+            background-color: #ff80ab;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+            animation: fadein 2s infinite;
+        }
+        @keyframes fadein {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .button:hover {
+            background-color: #f50057;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Halo.. Happy Birthday, Biwa!</h1>
+    <img src="foto2.jpeg" alt="Foto Pacar">
+    <p>banyak pesan yang mau aku sampaikan buat ulang tahunmu sayang ❤️</p>
+    <p>Kamu adalah anugerah terindah yang pernah aku miliki. I love you so much!</p>
+    
+    <button class="button">Klik untuk Kejutan 🎉</button>
+
+    <script>
+        const button = document.querySelector('.button');
+
+        button.addEventListener('click', () => {
+          // Add your surprise code here!
+          // Replace this with your own code
+          alert('Selamat ulang tahun, Sayang! 🎉');
+        });
+    </script>
+
+</body>
+</html>
